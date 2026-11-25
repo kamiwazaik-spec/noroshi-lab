@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Geminiタスクの頼み方10個｜かなた</title>
+<meta name="description" content="お店のSNSの下準備を、AIに最後まで任せる頼み方10個と、頼み方の型、任せる前のチェック。">
+<meta property="og:title" content="Geminiタスクの頼み方10個｜かなた">
+<meta property="og:description" content="調べる・表にする・予定に入れる。SNSの下準備を任せる頼み方10個。">
+<meta property="og:image" content="ogp.jpg">
+<meta name="robots" content="noindex">
+<style>
+:root{--sumi:#15120f;--sumi2:#1f1a15;--kinari:#f1ebdf;--kinari2:#e6dccb;--ai:#3b3127;--hi:#e8792b;--hai:#a89a84}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--kinari);color:var(--ai);font-family:"Hiragino Sans","Noto Sans JP","Noto Sans CJK JP",sans-serif;font-size:16px;line-height:1.9;letter-spacing:.02em}
+.mincho{font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP","Noto Serif CJK JP",serif}
+a{color:inherit}
+.hero{position:relative;min-height:88vh;background:var(--sumi) url(hero.jpg) 70% center/cover;color:var(--kinari);display:flex;flex-direction:column;justify-content:flex-end;padding:0 24px 56px}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(21,18,15,.35),rgba(21,18,15,.2) 35%,rgba(21,18,15,.92) 85%)}
+.hero>*{position:relative}
+.kicker{font-size:12px;letter-spacing:.35em;color:var(--hi)}
+.hero h1{font-size:40px;line-height:1.35;margin-top:14px;font-weight:700;letter-spacing:.04em}
+.hero h1 em{font-style:normal;color:var(--hi)}
+.lead{margin-top:18px;font-size:15px;color:#d9cdb8}
+.flow{display:flex;align-items:center;gap:10px;margin-top:28px;font-size:17px;flex-wrap:wrap}
+.flow span{white-space:nowrap}
+.flow i.ln{flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--hi));max-width:32px;min-width:14px}
+.ember{display:inline-block;width:9px;height:13px;margin-right:6px;vertical-align:1px;border-radius:50%/60% 60% 40% 40%;background:radial-gradient(ellipse at 50% 70%,#ffc27e 0%,var(--hi) 50%,rgba(232,121,43,.2) 80%)}
+main{max-width:640px;margin:0 auto;padding:56px 22px 40px}
+.intro p+p{margin-top:14px}
+.need{margin-top:26px;border-top:1px solid var(--kinari2);border-bottom:1px solid var(--kinari2);padding:18px 2px}
+.need h3{font-size:14px;letter-spacing:.2em;color:#8a6a4a}
+.need ul{list-style:none;margin-top:8px}
+.need li{padding-left:1.2em;position:relative}
+.need li:before{content:"";position:absolute;left:2px;top:.85em;width:6px;height:6px;background:var(--hi);transform:rotate(45deg)}
+.step{margin-top:72px}
+.st-head{display:flex;align-items:baseline;gap:14px}
+.st-head .name{font-size:40px;font-weight:700;color:var(--sumi);letter-spacing:.08em}
+.st-head .sub{font-size:13px;letter-spacing:.25em;color:#8a6a4a}
+.step h2{font-size:21px;margin-top:6px;color:var(--sumi);line-height:1.6}
+.step>p{margin-top:12px}
+.get{margin-top:12px;font-size:14px;color:#6b5a48}
+.get b{color:var(--hi);font-weight:700}
+.prompt{margin-top:20px;background:var(--sumi);color:#eee5d6;border-radius:4px;overflow:hidden}
+.prompt .bar{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-bottom:1px solid #2e2720;font-size:12px;letter-spacing:.2em;color:var(--hai)}
+.copy{appearance:none;border:1px solid var(--hi);background:transparent;color:var(--hi);font:inherit;font-size:13px;letter-spacing:.1em;padding:6px 14px;border-radius:2px;cursor:pointer}
+.copy.done{background:var(--hi);color:var(--sumi)}
+.prompt pre{white-space:pre-wrap;word-break:break-word;padding:16px 16px 20px;font-family:inherit;font-size:14.5px;line-height:1.85}
+.prompt pre mark{background:transparent;color:var(--hi)}
+.ex{margin-top:18px;font-size:14px;color:#6b5a48}
+.ex b{color:var(--ai)}
+table{width:100%;border-collapse:collapse;margin-top:16px;font-size:13.5px;line-height:1.6;background:#f7f2e9}
+th,td{border:1px solid var(--kinari2);padding:9px 10px;text-align:left;vertical-align:top}
+th{background:#ebe2d2;font-weight:700;color:var(--ai)}
+.note{margin-top:16px;border-left:2px solid var(--hi);padding:4px 0 4px 14px;font-size:14.5px}
+.pick{margin-top:14px;list-style:none}
+.pick li{padding-left:1.4em;position:relative}
+.pick li:before{content:"✓";position:absolute;left:0;color:var(--hi)}
+.trouble{margin-top:72px}
+.trouble h2{font-size:22px;color:var(--sumi)}
+.trouble dl{margin-top:14px}
+.trouble dt{font-weight:700;margin-top:14px;color:var(--sumi)}
+.trouble dd{font-size:14.5px}
+.end{background:var(--sumi);color:var(--kinari);padding:64px 24px 72px;text-align:center}
+.end .big{font-size:24px;line-height:1.8;letter-spacing:.06em}
+.end p{margin-top:20px;font-size:14.5px;color:#d9cdb8;max-width:520px;margin-left:auto;margin-right:auto;text-align:left}
+.end .sign{margin-top:34px;font-size:15px;letter-spacing:.5em;color:var(--hai);text-align:center}
+.line-btn{display:inline-block;margin-top:30px;border:1px solid var(--hi);color:var(--hi);text-decoration:none;padding:12px 26px;letter-spacing:.15em;font-size:14px}
+@media(min-width:720px){.hero h1{font-size:54px}.hero{padding:0 8vw 80px}}
+.list{counter-reset:n}
+.item{margin-top:34px}
+.item h3{font-size:17px;color:var(--sumi);line-height:1.6}
+.item h3 .no{display:inline-block;min-width:2.2em;color:var(--hi);font-family:"Hiragino Mincho ProN","Noto Serif JP",serif;font-size:20px}
+.item .use{margin-top:6px;font-size:14px;color:#6b5a48}
+.tag{display:inline-block;font-size:11px;letter-spacing:.1em;border:1px solid var(--hi);color:var(--hi);padding:0 8px;margin-left:8px;vertical-align:2px}
+.type3{margin-top:20px;display:grid;gap:10px}
+.type3 div{background:#f7f2e9;border:1px solid var(--kinari2);padding:12px 14px}
+.type3 b{color:var(--hi);margin-right:8px}
+</style>
+</head>
+<body>
+<section class="hero">
+  <div class="kicker">登録特典 ／ 合言葉「タスク」</div>
+  <h1 class="mincho">SNSの下準備、<br><em>AIに最後まで</em></h1>
+  <p class="lead">調べる、表にする、予定を並べる。お店のSNSの「投稿を作る前の作業」を任せる頼み方10個と、頼み方の型、任せる前のチェック3つ。</p>
+  <div class="flow mincho"><span><i class="ember"></i>型</span><i class="ln"></i><span><i class="ember"></i>頼み方10個</span><i class="ln"></i><span><i class="ember"></i>チェック</span></div>
+</section>
+
+<main>
+  <div class="intro">
+    <p>SNSの運用は、投稿を作る前の下準備がとても多い仕事です。周りのお店を調べる。行事を調べる。投稿の予定を立てる。1つ1つは単純でも、全部やると半日かかります。</p>
+    <p>Geminiの「タスク」は、ゴールを伝えると、そこまでの手順を自分で考えて最後まで作業してくれる機能です。このページの頼み方は、<b>タスクでも、ChatGPTやClaudeのふだんのチャットでも</b>そのまま使えます。</p>
+  </div>
+  <div class="need">
+    <h3>用意するもの</h3>
+    <ul>
+      <li>AI（Geminiのタスク、またはChatGPT・Claude）</li>
+      <li>自分のお店の地域・業種・お客さん（[ ] の所に入れます）</li>
+    </ul>
+  </div>
+
+  <section class="step">
+    <div class="st-head mincho"><span class="name">型</span><span class="sub">1 ／ 3</span></div>
+    <h2 class="mincho">頼み方は「ゴール・条件・わからない時」の3つだけ</h2>
+    <p>この3つがないと、AIが自分で決めてしまう所が増えて、思っていたのと違う物が出てきます。10個の頼み方も、全部この形です。</p>
+    <div class="type3">
+      <div><b>ゴール</b>最後の形を言う。「表にして」「一覧にして」</div>
+      <div><b>条件</b>何軒か、いつの分か、誰向けか。</div>
+      <div><b>わからない時</b>「空けておいて」「要確認と書いて」。これがないと、それっぽい情報で埋めてしまうことがあります。</div>
+    </div>
+    <div class="prompt"><div class="bar">自分で作るときの型<button class="copy" data-t="t0">コピー</button></div><pre id="t0"><mark>[ゴール：最後にほしい形。例：表にしてください]</mark>
+条件は、<mark>[数・期間・誰向けか]</mark>です。
+わからない所は、それっぽく埋めずに「要確認」と書いてください。</pre></div>
+  </section>
+
+  <section class="step">
+    <div class="st-head mincho"><span class="name">頼み方</span><span class="sub">2 ／ 3</span></div>
+    <h2 class="mincho">SNSの下準備で使える頼み方10個</h2>
+    <p>01〜03は、動画の実演と同じテーマです。[ ] の所だけ自分のお店に書きかえて、コピーして使ってください。</p>
+    <p class="get">10個とも、架空の「長崎の小さなカフェ」を入れてChatGPTで1回ずつ動かし、形どおりに返ってくることを確かめています。</p>
+    <div class="list">
+    <div class="item"><h3><span class="no">01</span>近所の同業を調べて、表にする</h3><p class="use">新しくSNSを始める時・見直す時。周りがやっていないことを探すための表です。</p>
+    <div class="prompt"><div class="bar">頼み方 01<button class="copy" data-t="q1">コピー</button></div><pre id="q1"><mark>[地域。例：長崎駅]</mark>の近くの<mark>[業種。例：カフェ]</mark>を10軒調べて、表にしてください。
+列は、お店の名前／インスタがあるか／どんな投稿が多いか／営業時間。
+わからない所は、それっぽく埋めずに空けておいてください。
+最後に、表を見て「<mark>[自分のお店]</mark>」がやるべき投稿の方向を3つ。周りのお店がやっていないことから選んでください。表に書いていないことは理由にしないでください。</pre></div></div>
+    <div class="item"><h3><span class="no">02</span>1か月の投稿カレンダーを作る</h3><p class="use">ネタ切れと「今日なに出そう」をなくす。決めた日に出し続けるための一覧です。</p>
+    <div class="prompt"><div class="bar">頼み方 02<button class="copy" data-t="q2">コピー</button></div><pre id="q2"><mark>[自分のお店。例：長崎の小さなカフェ]</mark>のインスタで、<mark>[月]</mark>に週<mark>[3]</mark>回投稿します。
+<mark>[月]</mark>の行事や季節に合わせて、投稿ネタと日付を決めて、一覧にしてください（日付／曜日／ネタ名／撮る物）。
+カレンダーにはまだ何も入れないでください。一覧を見せて、私の確認を待ってください。</pre></div></div>
+    <div class="item"><h3><span class="no">03</span>行事の企画の下調べ</h3><p class="use">「何かキャンペーンやりたいね」の前に、考える材料を一気にそろえます。</p>
+    <div class="prompt"><div class="bar">頼み方 03<button class="copy" data-t="q3">コピー</button></div><pre id="q3"><mark>[業種]</mark>のインスタでよくある<mark>[行事。例：クリスマス]</mark>の企画を調べて、多いものを5つの型にまとめてください。
+それぞれ、やり方／よくある失敗／小さなお店でもできるか。
+最後に、<mark>[自分のお店]</mark>向けの企画案を2つ。わからないことは「要確認」と書いてください。</pre></div></div>
+    <div class="item"><h3><span class="no">04</span>口コミを整理して、ネタを拾う</h3><p class="use">Googleマップなどの口コミを貼るだけ。お客さんの言葉が、そのまま投稿の1行目になります。</p>
+    <div class="prompt"><div class="bar">頼み方 04<button class="copy" data-t="q4">コピー</button></div><pre id="q4">下に貼るお店の口コミを読んで、ほめられている所と、不満の所を、それぞれ多い順に3つずつまとめてください。
+投稿のネタになりそうなお客さんの言葉も3つ、そのまま抜き出してください。
+口コミに書いていないことは書かないでください。
+【口コミ】<mark>[口コミをそのまま貼る]</mark></pre></div></div>
+    <div class="item"><h3><span class="no">05</span>地域のイベント情報を集める</h3><p class="use">地域のお祭りや行事に合わせた投稿は、近所の人に届きやすくなります。</p>
+    <div class="prompt"><div class="bar">頼み方 05<button class="copy" data-t="q5">コピー</button></div><pre id="q5"><mark>[地域]</mark>で<mark>[月]</mark>にあるイベント・お祭り・行事を調べて、表にしてください。
+列は、日付／場所／お店の投稿につなげられそうか（ひとこと）。
+日付や場所がはっきりしない物は「要確認」と書き、どこで調べたかも書いてください。</pre></div></div>
+    <div class="item"><h3><span class="no">06</span>ハッシュタグの候補を出す</h3><p class="use">毎回考えるのが面倒なハッシュタグを、ネタごとに候補で出してもらいます。</p>
+    <div class="prompt"><div class="bar">頼み方 06<button class="copy" data-t="q6">コピー</button></div><pre id="q6"><mark>[自分のお店]</mark>の投稿「<mark>[投稿のネタ]</mark>」に付けるハッシュタグの候補を15個出してください。
+地域の言葉／業種の言葉／ネタの言葉の3つに分けてください。
+投稿数などの数字は、確かめられないので書かないでください。</pre></div></div>
+    <div class="item"><h3><span class="no">07</span>月末の振り返りの下準備</h3><p class="use">インスタの数字を貼るだけで、次の月に何を続けるかが見えます。</p>
+    <div class="prompt"><div class="bar">頼み方 07<button class="copy" data-t="q7">コピー</button></div><pre id="q7">下に貼る今月の投稿の数字を表にして、いちばんよかった投稿と、いちばんよくなかった投稿を選び、その違いを3行でまとめてください。
+来月も続けることを1つ、やめることを1つ。数字は、貼った物だけを使ってください。
+【数字】<mark>[投稿名・保存・シェア・コメント・リーチなどを貼る]</mark></pre></div></div>
+    <div class="item"><h3><span class="no">08</span>撮影場所の候補を探す</h3><p class="use">いつも店内ばかり、になったら。お店の近くで撮れる場所を探します。</p>
+    <div class="prompt"><div class="bar">頼み方 08<button class="copy" data-t="q8">コピー</button></div><pre id="q8"><mark>[地域]</mark>で、<mark>[自分のお店]</mark>の投稿の写真や動画を撮れそうな場所を5つ出してください。
+それぞれ、お店から歩いて行けそうか／撮影に許可がいりそうか（わからなければ「要確認」）を書いてください。</pre></div></div>
+    <div class="item"><h3><span class="no">09</span>季節の行事・記念日の一覧</h3><p class="use">先の月の行事を先に知っておくと、撮影の準備が間に合います。</p>
+    <div class="prompt"><div class="bar">頼み方 09<button class="copy" data-t="q9">コピー</button></div><pre id="q9"><mark>[月]</mark>〜<mark>[月]</mark>の季節の行事・記念日を一覧にして、それぞれ<mark>[業種]</mark>の投稿ネタにつなげる一言を付けてください。
+日付が年によって変わる物は「年によって変わる」と書いてください。</pre></div></div>
+    <div class="item"><h3><span class="no">10</span>プレゼント企画の決まりの下調べ</h3><p class="use">プレゼント企画をする前に、確かめておくことを一覧にします。</p>
+    <div class="prompt"><div class="bar">頼み方 10<button class="copy" data-t="q10">コピー</button></div><pre id="q10">インスタでお店のプレゼント企画をするときに確認しておくこと（Instagramのルール・景品の決まりなど）を調べて、チェックリストにしてください。
+それぞれ、どこに書いてあるか（出どころ）も付けてください。
+これは下調べです。最後は公式の案内や専門家で確かめる前提で、言い切れないことは「要確認」と書いてください。</pre></div></div>
+    </div>
+  </section>
+
+  <section class="step">
+    <div class="st-head mincho"><span class="name">チェック</span><span class="sub">3 ／ 3</span></div>
+    <h2 class="mincho">任せる前のチェック3つ</h2>
+    <ul class="pick">
+      <li><b>調べた結果は、1つは自分で確かめる。</b>営業時間やお店の情報が、実際と違うことがあります。表は「下書き」です。</li>
+      <li><b>実行の前の確認は、中身を読んでからOKを押す。</b>カレンダーに入れる、何かを送る、は後から消すのが面倒です。</li>
+      <li><b>お店の名前で外に出す物は、AIに出させない。</b>投稿や返信は下書きまで。お金が動くこと、人に連絡がいくことは、最後のボタンを自分で押す。</li>
+    </ul>
+    <p class="note">分け方のコツ：調べる・並べる・入れる、のように<b>答えが1つに決まる作業</b>はAIに。どのネタでいくか、お店らしい言葉はどれか、のように<b>答えが1つじゃない所</b>は人が決めます。</p>
+  </section>
+
+  <section class="trouble">
+    <h2 class="mincho">つまずいたとき</h2>
+    <dl>
+      <dt>表が空欄だらけ</dt><dd>「空けておいて」と頼んだので正しい動きです。気になるお店だけ、自分で開いて埋めてください。インスタのIDが分かっていれば、頼み方に書き足すと埋まりやすくなります。</dd>
+      <dt>知らない数字や日付が入っている</dt><dd>消して、「確かめられないことは要確認と書いて」と送る。</dd>
+      <dt>出てきた案がお店に合わない</dt><dd>「表に書いてあることだけで考えて」「うちのお客さんは[ ]です」と続けて送る。</dd>
+      <dt>記念日や決まりごとが本当か不安</dt><dd>「どこで決められた物か、出どころを書いて」と続けて送る。プレゼント企画の決まり（頼み方10）は、最後は公式の案内で確かめてください。</dd>
+      <dt>勝手にカレンダーに入りそう</dt><dd>頼み方の最後に「まだ何も入れないで。一覧を見せて、私の確認を待って」と書く（頼み方02に入れてあります）。</dd>
+    </dl>
+  </section>
+</main>
+
+<section class="end">
+  <div class="big mincho">下準備はAIに。<br>決めるのは、お店の人。</div>
+  <p>下準備で集めた材料は、ふだん使っているAIに渡して、投稿の文章に仕上げます。毎朝の段取りをAIに任せる指示文は、公式LINEで「AI社員」と送ると届きます。</p>
+  <p>自分のお店だとどう頼めばいいか分からない時は、公式LINEで「相談」と送ってください。</p>
+  <a class="line-btn" href="https://lin.ee/Qn23d5G">LINEで相談する</a>
+  <div class="sign mincho">かなた</div>
+</section>
+
+<script>
+document.querySelectorAll('.copy').forEach(function(b){
+  b.addEventListener('click',function(){
+    var t=document.getElementById(b.dataset.t).innerText;
+    var ok=function(){b.textContent='コピーしました';b.classList.add('done');setTimeout(function(){b.textContent='コピー';b.classList.remove('done')},1800)};
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(ok,function(){fallback(t);ok()})}else{fallback(t);ok()}
+  });
+});
+function fallback(t){var a=document.createElement('textarea');a.value=t;a.style.position='fixed';a.style.opacity='0';document.body.appendChild(a);a.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(a)}
+</script>
+</body>
+</html>
