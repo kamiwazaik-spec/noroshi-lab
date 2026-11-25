@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>朝の段取り係の指示文｜かなた</title>
+<meta name="description" content="毎朝、今日やることを大事な順に並べてくれるAI社員「朝の段取り係」。指示文をそのままコピーして使えます。">
+<meta property="og:title" content="朝の段取り係の指示文｜かなた">
+<meta property="og:description" content="人を一人増やす前に、まずAIに。毎朝勝手に働くAI社員の、1人目の作り方。">
+<meta property="og:image" content="ogp.jpg">
+<meta name="robots" content="noindex">
+<style>
+:root{--sumi:#15120f;--sumi2:#1f1a15;--kinari:#f1ebdf;--kinari2:#e6dccb;--ai:#3b3127;--hi:#e8792b;--hai:#a89a84}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--kinari);color:var(--ai);font-family:"Hiragino Sans","Noto Sans JP","Noto Sans CJK JP",sans-serif;font-size:16px;line-height:1.9;letter-spacing:.02em}
+.mincho{font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP","Noto Serif CJK JP",serif}
+a{color:inherit}
+.hero{position:relative;min-height:88vh;background:var(--sumi) url(hero.jpg) 72% center/cover;color:var(--kinari);display:flex;flex-direction:column;justify-content:flex-end;padding:0 24px 56px}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(21,18,15,.35),rgba(21,18,15,.2) 35%,rgba(21,18,15,.92) 85%)}
+.hero>*{position:relative}
+.kicker{font-size:12px;letter-spacing:.35em;color:var(--hi)}
+.hero h1{font-size:40px;line-height:1.35;margin-top:14px;font-weight:700;letter-spacing:.04em}
+.hero h1 em{font-style:normal;color:var(--hi)}
+.lead{margin-top:18px;font-size:15px;color:#d9cdb8}
+.flow{display:flex;align-items:center;gap:10px;margin-top:28px;font-size:17px;flex-wrap:wrap}
+.flow span{white-space:nowrap}
+.flow i.ln{flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--hi));max-width:32px;min-width:14px}
+.ember{display:inline-block;width:9px;height:13px;margin-right:6px;vertical-align:1px;border-radius:50%/60% 60% 40% 40%;background:radial-gradient(ellipse at 50% 70%,#ffc27e 0%,var(--hi) 50%,rgba(232,121,43,.2) 80%)}
+main{max-width:640px;margin:0 auto;padding:56px 22px 40px}
+.intro p+p{margin-top:14px}
+.need{margin-top:26px;border-top:1px solid var(--kinari2);border-bottom:1px solid var(--kinari2);padding:18px 2px}
+.need h3{font-size:14px;letter-spacing:.2em;color:#8a6a4a}
+.need ul{list-style:none;margin-top:8px}
+.need li{padding-left:1.2em;position:relative}
+.need li:before{content:"";position:absolute;left:2px;top:.85em;width:6px;height:6px;background:var(--hi);transform:rotate(45deg)}
+.step{margin-top:72px}
+.st-head{display:flex;align-items:baseline;gap:14px}
+.st-head .name{font-size:40px;font-weight:700;color:var(--sumi);letter-spacing:.08em}
+.st-head .sub{font-size:13px;letter-spacing:.25em;color:#8a6a4a}
+.step h2{font-size:21px;margin-top:6px;color:var(--sumi);line-height:1.6}
+.step>p{margin-top:12px}
+.get{margin-top:12px;font-size:14px;color:#6b5a48}
+.get b{color:var(--hi);font-weight:700}
+.prompt{margin-top:20px;background:var(--sumi);color:#eee5d6;border-radius:4px;overflow:hidden}
+.prompt .bar{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-bottom:1px solid #2e2720;font-size:12px;letter-spacing:.2em;color:var(--hai)}
+.copy{appearance:none;border:1px solid var(--hi);background:transparent;color:var(--hi);font:inherit;font-size:13px;letter-spacing:.1em;padding:6px 14px;border-radius:2px;cursor:pointer}
+.copy.done{background:var(--hi);color:var(--sumi)}
+.prompt pre{white-space:pre-wrap;word-break:break-word;padding:16px 16px 20px;font-family:inherit;font-size:14.5px;line-height:1.85}
+.prompt pre mark{background:transparent;color:var(--hi)}
+.ex{margin-top:18px;font-size:14px;color:#6b5a48}
+.ex b{color:var(--ai)}
+table{width:100%;border-collapse:collapse;margin-top:16px;font-size:13.5px;line-height:1.6;background:#f7f2e9}
+th,td{border:1px solid var(--kinari2);padding:9px 10px;text-align:left;vertical-align:top}
+th{background:#ebe2d2;font-weight:700;color:var(--ai)}
+.note{margin-top:16px;border-left:2px solid var(--hi);padding:4px 0 4px 14px;font-size:14.5px}
+.pick{margin-top:14px;list-style:none}
+.pick li{padding-left:1.4em;position:relative}
+.pick li:before{content:"✓";position:absolute;left:0;color:var(--hi)}
+.trouble{margin-top:72px}
+.trouble h2{font-size:22px;color:var(--sumi)}
+.trouble dl{margin-top:14px}
+.trouble dt{font-weight:700;margin-top:14px;color:var(--sumi)}
+.trouble dd{font-size:14.5px}
+.end{background:var(--sumi);color:var(--kinari);padding:64px 24px 72px;text-align:center}
+.end .big{font-size:24px;line-height:1.8;letter-spacing:.06em}
+.end p{margin-top:20px;font-size:14.5px;color:#d9cdb8;max-width:520px;margin-left:auto;margin-right:auto;text-align:left}
+.end .sign{margin-top:34px;font-size:15px;letter-spacing:.5em;color:var(--hai);text-align:center}
+.line-btn{display:inline-block;margin-top:30px;border:1px solid var(--hi);color:var(--hi);text-decoration:none;padding:12px 26px;letter-spacing:.15em;font-size:14px}
+@media(min-width:720px){.hero h1{font-size:54px}.hero{padding:0 8vw 80px}}
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="kicker">登録特典 ／ 合言葉「AI社員」</div>
+  <h1 class="mincho">AI社員の1人目、<br><em>朝の段取り係</em></h1>
+  <p class="lead">毎朝決まった時間に勝手に起きて、今日やることを大事な順に並べてくれる。YouTubeで見せた「朝の司令塔」の指示文を、そのままお渡しします。</p>
+  <div class="flow mincho"><span><i class="ember"></i>指示文</span><i class="ln"></i><span><i class="ember"></i>時間</span><i class="ln"></i><span><i class="ember"></i>置き場所</span></div>
+</section>
+
+<main>
+  <div class="intro">
+    <p>人を一人増やす前に、まずAIに任せられないか。いちばん最初におすすめなのが、毎日同じで頭を使わない「朝の段取り」です。</p>
+    <p>AI社員の作り方は3つだけです。<b>指示文を1枚書く。動く時間を決める。報告の置き場所を決める。</b>プログラムは1行も書きません。上から順にやれば、今日から1人目が働きはじめます。</p>
+  </div>
+  <div class="need">
+    <h3>用意するもの</h3>
+    <ul>
+      <li>AI（ClaudeかChatGPT。同じ指示文でどちらでも動きます）</li>
+      <li>今日の予定と、届いている連絡（カレンダーでも手帳でもOK）</li>
+    </ul>
+  </div>
+
+  <section class="step">
+    <div class="st-head mincho"><span class="name">指示文</span><span class="sub">1 ／ 3</span></div>
+    <h2 class="mincho">社員の仕事のやり方を、指示文1枚に書く</h2>
+    <p>中身は3つのブロックだけです。<b>何を見るか（読むもの）、何を出すか（やること）、何をしちゃダメか（守ること）。</b>人を雇ってマニュアルを1枚渡すのと同じです。<mark style="background:none;color:var(--hi)">[ ]</mark> の所だけ、自分の仕事に書きかえてください。</p>
+    <p class="get">終わると手元に残るもの：<b>自分専用の「朝の段取り係」の指示文</b></p>
+    <div class="prompt"><div class="bar">指示文<button class="copy" data-t="p1">コピー</button></div><pre id="p1">あなたは私の「朝の段取り係」です。毎朝、次のとおりに動いてください。
+
+【私のこと】
+・仕事：<mark>[業種・お店の形。例：駅前の小さなパン屋（店主1人＋パート2人）]</mark>
+・朝いちばんに知りたいこと：<mark>[例：今日の仕込みの順番と、返事が必要な連絡]</mark>
+
+【読むもの】
+・今日と明日のカレンダー
+・前の日から届いた新しいメール
+・（あれば）前の日のメモ・やることリスト
+
+【やること】
+1. 今日やることを、大事な順に5つまで並べる
+2. 今日の予定の前に、準備がいるものを書く
+3. 返事が必要なメールを一覧にする（返事の下書きまで。送らない）
+4. 予定が重なっている所・詰まっている所を知らせる
+
+【守ること】
+・結論から3〜5行で。やさしい言葉で、短く。
+・メールの送信・支払い・予約の変更は、絶対にしない（下書きと知らせるまで）。
+・わからないことは「不明」と書く。数字や予定を作らない。</pre></div>
+    <p class="note">いちばん大事なのは【守ること】です。うちのAI社員は全員、<b>送信と支払いはAIにやらせない</b>と書いています。お金を動かすのも、人にメッセージを送るのも人間。この線引きがあるから、安心して任せられます。</p>
+  </section>
+
+  <section class="step">
+    <div class="st-head mincho"><span class="name">お試し</span><span class="sub">1.5</span></div>
+    <h2 class="mincho">まずは手で貼って、1回だけ動かしてみる</h2>
+    <p>いきなり自動にしなくて大丈夫です。1の指示文の下に、今日の予定と連絡をそのまま貼って送ってみてください。どんな報告が来るのかが、すぐ分かります。</p>
+    <div class="prompt"><div class="bar">指示文の下に足す<button class="copy" data-t="p2">コピー</button></div><pre id="p2">――今日はお試しなので、【読むもの】の代わりに下に貼ります。スケジュール（自動の実行）は作らないでください――
+【今日の予定】<mark>[時間と予定を、思いつくだけ]</mark>
+【明日の予定】<mark>[あれば]</mark>
+【届いている連絡】<mark>[メール・LINE・DMで、返事がまだの物]</mark>
+【メモ】<mark>[気になっていること]</mark></pre></div>
+    <p class="ex"><b>記入例（架空のパン屋さん）</b>：【今日の予定】7:00 開店／10:00 小麦粉の業者さん納品／14:00〜15:00 保健所の方が来店／15:00 パートのAさん上がり【届いている連絡】保育園「明日の食パン20斤、8:30に早められますか？」／インスタのDM「土曜にクロワッサン10個を取り置きできますか？」【メモ】保健所の書類がまだ見つかっていない</p>
+    <p style="margin-top:14px">この例を実際にChatGPTで動かしたときに返ってきた報告（一部）です。</p>
+    <table>
+      <tr><th>報告の中身</th><th>返ってきた答え</th></tr>
+      <tr><td>いちばん大事なこと</td><td>保健所の方が来る前に、書類を探す</td></tr>
+      <tr><td>重なっている所</td><td>保健所の対応が終わる時間と、Aさんが上がる時間が同じ15時。先に引き継ぎを</td></tr>
+      <tr><td>返事が必要な連絡</td><td>保育園とインスタのDMは、返事の下書きまで（送信はしない）</td></tr>
+      <tr><td>わからないこと</td><td>小麦粉の値上げ額などは「不明」と書いてきた（数字を作らない）</td></tr>
+    </table>
+    <p class="note">AIが作った返事の下書きは、そのまま送らずに必ず自分で読んでから。特に時間や数の約束は、自分で確かめてください。</p>
+  </section>
+
+  <section class="step">
+    <div class="st-head mincho"><span class="name">時間</span><span class="sub">2 ／ 3</span></div>
+    <h2 class="mincho">社員が動く時間を決める</h2>
+    <p>毎回自分で頼むと、人は忘れるし、疲れるし、3日で続かなくなります。だから頼むのをやめて、<b>「毎朝この時間になったら、これをやって」と決めておきます。</b>おすすめは、始業や開店の30分前です。</p>
+    <ul class="pick">
+      <li>ClaudeにもChatGPTにも、決まった時間に自動で動かす機能があります（ChatGPTは左の「スケジュール」）。1の指示文を入れて、時間を決めるだけです。</li>
+      <li>カレンダーやメールを自動で読ませるには、AIの設定でGoogleカレンダーやGmailとつなぐ必要があります。つないでいない間は、お試しのように手で貼ればOKです。</li>
+      <li>自動で動かす機能は、使っているプランによっては使えないことがあります。</li>
+    </ul>
+  </section>
+
+  <section class="step">
+    <div class="st-head mincho"><span class="name">置き場所</span><span class="sub">3 ／ 3</span></div>
+    <h2 class="mincho">報告の形と、届く場所を決める</h2>
+    <p>AIは放っておくと、長い文章を出してきます。でも、長い報告は読みません。うちのAI社員は全員、<b>結論から3〜5行</b>で報告が届くようにしています。お試しで返事が長かったら、これを同じチャットに送ってください。</p>
+    <p class="get">終わると手元に残るもの：<b>朝、読むだけで終わる3〜5行の報告</b></p>
+    <div class="prompt"><div class="bar">報告の型<button class="copy" data-t="p3">コピー</button></div><pre id="p3">報告は、毎回この形にしてください。これより長くしないでください。
+1行目：今日いちばん大事なこと（1つだけ）
+2〜4行目：今日やること（大事な順に）
+5行目：気をつけること（重なり・期限・返事待ち）
+くわしい中身（返事の下書きなど）は、その下に分けて書いてください。</pre></div>
+    <p style="margin-top:14px">報告が届く場所も1つに決めます。AIのアプリの通知、毎朝同じチャット、メモアプリなど、<b>朝いちばんに必ず見る所</b>にしてください。場所が決まっていると「あれどこだっけ？」と探す時間がなくなります。</p>
+  </section>
+
+  <section class="trouble">
+    <h2 class="mincho">つまずいたとき</h2>
+    <dl>
+      <dt>報告が長くて読む気がしない</dt><dd>3の「報告の型」を同じチャットに送る。それでも長ければ「3行だけで」と送る。</dd>
+      <dt>書いていない予定や数字が入っている</dt><dd>消して、「私が書いていないことは書かないで」と送る。AIはもっともらしい数字を作ることがあります。</dd>
+      <dt>試しただけなのに、自動の予定が作られた</dt><dd>ChatGPTは「毎朝」と書くと、スケジュールを自分で作ることがあります。いらなければ「さっきのスケジュールは止めて」と送るか、「スケジュール」の画面から止める。</dd>
+      <dt>カレンダーやメールを読んでくれない</dt><dd>AIとGoogleカレンダー・Gmailがつながっていないと見られません。つなぐまでは、お試しのように手で貼る。</dd>
+      <dt>勝手にメールを送らないか心配</dt><dd>【守ること】の「送信・支払いはしない」を消さないでください。送るボタンを押すのは、いつも自分です。</dd>
+    </dl>
+  </section>
+</main>
+
+<section class="end">
+  <div class="big mincho">人を一人増やす前に、<br>まずAIに。</div>
+  <p>1人目が毎朝動きはじめたら、次は「自分が忘れがちなこと」「お客さんに早く返したいこと」から2人目を作ります。うちでは、約束したのにカレンダーに入っていない予約を拾う「見回り係」や、DMの返事をそろえる「DM番」がそうです。</p>
+  <p>うまく動かなかった、自分の仕事だとどう書けばいいか分からない、という時は、公式LINEで「相談」と送ってください。</p>
+  <a class="line-btn" href="https://lin.ee/Qn23d5G">LINEで相談する</a>
+  <div class="sign mincho">かなた</div>
+</section>
+
+<script>
+document.querySelectorAll('.copy').forEach(function(b){
+  b.addEventListener('click',function(){
+    var t=document.getElementById(b.dataset.t).innerText;
+    var ok=function(){b.textContent='コピーしました';b.classList.add('done');setTimeout(function(){b.textContent='コピー';b.classList.remove('done')},1800)};
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(ok,function(){fallback(t);ok()})}else{fallback(t);ok()}
+  });
+});
+function fallback(t){var a=document.createElement('textarea');a.value=t;a.style.position='fixed';a.style.opacity='0';document.body.appendChild(a);a.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(a)}
+</script>
+</body>
+</html>
