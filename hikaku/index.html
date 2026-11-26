@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>3つのAIの比べ方セット｜かなた</title>
+<meta name="description" content="ChatGPT・Claude・Geminiに同じ指示を出して比べる。動画の3回戦の指示文3本、採点表、負けたAIに足す一言5本。">
+<meta property="og:title" content="3つのAIの比べ方セット｜かなた">
+<meta property="og:description" content="同じ指示・新しいチャット・同じものさし。自分のお店の仕事で、いちばん使えるAIを決める道具一式。">
+<meta property="og:image" content="ogp.jpg">
+<meta name="robots" content="noindex">
+<style>
+:root{--sumi:#15120f;--sumi2:#1f1a15;--kinari:#f1ebdf;--kinari2:#e6dccb;--ai:#3b3127;--hi:#e8792b;--hai:#a89a84}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--kinari);color:var(--ai);font-family:"Hiragino Sans","Noto Sans JP","Noto Sans CJK JP",sans-serif;font-size:16px;line-height:1.9;letter-spacing:.02em}
+.mincho{font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP","Noto Serif CJK JP",serif}
+a{color:inherit}
+.hero{position:relative;min-height:88vh;background:var(--sumi) url(hero.jpg) 70% center/cover;color:var(--kinari);display:flex;flex-direction:column;justify-content:flex-end;padding:0 24px 56px}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(21,18,15,.35),rgba(21,18,15,.2) 35%,rgba(21,18,15,.92) 85%)}
+.hero>*{position:relative}
+.kicker{font-size:12px;letter-spacing:.35em;color:var(--hi)}
+.hero h1{font-size:40px;line-height:1.35;margin-top:14px;font-weight:700;letter-spacing:.04em}
+.hero h1 em{font-style:normal;color:var(--hi)}
+.lead{margin-top:18px;font-size:15px;color:#d9cdb8}
+.flow{display:flex;align-items:center;gap:10px;margin-top:28px;font-size:17px;flex-wrap:wrap}
+.flow span{white-space:nowrap}
+.flow i.ln{flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--hi));max-width:32px;min-width:14px}
+.ember{display:inline-block;width:9px;height:13px;margin-right:6px;vertical-align:1px;border-radius:50%/60% 60% 40% 40%;background:radial-gradient(ellipse at 50% 70%,#ffc27e 0%,var(--hi) 50%,rgba(232,121,43,.2) 80%)}
+main{max-width:640px;margin:0 auto;padding:56px 22px 40px}
+.intro p+p{margin-top:14px}
+.need{margin-top:26px;border-top:1px solid var(--kinari2);border-bottom:1px solid var(--kinari2);padding:18px 2px}
+.need h3{font-size:14px;letter-spacing:.2em;color:#8a6a4a}
+.need ul{list-style:none;margin-top:8px}
+.need li{padding-left:1.2em;position:relative}
+.need li:before{content:"";position:absolute;left:2px;top:.85em;width:6px;height:6px;background:var(--hi);transform:rotate(45deg)}
+.step{margin-top:72px}
+.st-head{display:flex;align-items:baseline;gap:14px}
+.st-head .name{font-size:40px;font-weight:700;color:var(--sumi);letter-spacing:.08em}
+.st-head .sub{font-size:13px;letter-spacing:.25em;color:#8a6a4a}
+.step h2{font-size:21px;margin-top:6px;color:var(--sumi);line-height:1.6}
+.step>p{margin-top:12px}
+.get{margin-top:12px;font-size:14px;color:#6b5a48}
+.get b{color:var(--hi);font-weight:700}
+.prompt{margin-top:20px;background:var(--sumi);color:#eee5d6;border-radius:4px;overflow:hidden}
+.prompt .bar{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-bottom:1px solid #2e2720;font-size:12px;letter-spacing:.2em;color:var(--hai)}
+.copy{appearance:none;border:1px solid var(--hi);background:transparent;color:var(--hi);font:inherit;font-size:13px;letter-spacing:.1em;padding:6px 14px;border-radius:2px;cursor:pointer}
+.copy.done{background:var(--hi);color:var(--sumi)}
+.prompt pre{white-space:pre-wrap;word-break:break-word;padding:16px 16px 20px;font-family:inherit;font-size:14.5px;line-height:1.85}
+.prompt pre mark{background:transparent;color:var(--hi)}
+.ex{margin-top:18px;font-size:14px;color:#6b5a48}
+.ex b{color:var(--ai)}
+table{width:100%;border-collapse:collapse;margin-top:16px;font-size:13.5px;line-height:1.6;background:#f7f2e9}
+th,td{border:1px solid var(--kinari2);padding:9px 10px;text-align:left;vertical-align:top}
+th{background:#ebe2d2;font-weight:700;color:var(--ai)}
+.note{margin-top:16px;border-left:2px solid var(--hi);padding:4px 0 4px 14px;font-size:14.5px}
+.pick{margin-top:14px;list-style:none}
+.pick li{padding-left:1.4em;position:relative}
+.pick li:before{content:"✓";position:absolute;left:0;color:var(--hi)}
+.trouble{margin-top:72px}
+.trouble h2{font-size:22px;color:var(--sumi)}
+.trouble dl{margin-top:14px}
+.trouble dt{font-weight:700;margin-top:14px;color:var(--sumi)}
+.trouble dd{font-size:14.5px}
+.end{background:var(--sumi);color:var(--kinari);padding:64px 24px 72px;text-align:center}
+.end .big{font-size:24px;line-height:1.8;letter-spacing:.06em}
+.end p{margin-top:20px;font-size:14.5px;color:#d9cdb8;max-width:520px;margin-left:auto;margin-right:auto;text-align:left}
+.end .sign{margin-top:34px;font-size:15px;letter-spacing:.5em;color:var(--hai);text-align:center}
+.line-btn{display:inline-block;margin-top:30px;border:1px solid var(--hi);color:var(--hi);text-decoration:none;padding:12px 26px;letter-spacing:.15em;font-size:14px}
+@media(min-width:720px){.hero h1{font-size:54px}.hero{padding:0 8vw 80px}}
+.list{counter-reset:n}
+.item{margin-top:34px}
+.item h3{font-size:17px;color:var(--sumi);line-height:1.6}
+.item h3 .no{display:inline-block;min-width:2.2em;color:var(--hi);font-family:"Hiragino Mincho ProN","Noto Serif JP",serif;font-size:20px}
+.item .use{margin-top:6px;font-size:14px;color:#6b5a48}
+.tag{display:inline-block;font-size:11px;letter-spacing:.1em;border:1px solid var(--hi);color:var(--hi);padding:0 8px;margin-left:8px;vertical-align:2px}
+.type3{margin-top:20px;display:grid;gap:10px}
+.type3 div{background:#f7f2e9;border:1px solid var(--kinari2);padding:12px 14px}
+.type3 b{color:var(--hi);margin-right:8px}
+</style>
+<style>
+.score{width:100%;border-collapse:collapse;margin-top:18px;font-size:13.5px;background:#f7f2e9}
+.score th,.score td{border:1px solid var(--kinari2);padding:7px 6px;text-align:center;vertical-align:middle}
+.score th{background:#ebe2d2}
+.score td.r{text-align:left;font-weight:700;color:var(--sumi);white-space:nowrap}
+.score select{font:inherit;font-size:14px;padding:3px 2px;border:1px solid #cbbfa9;background:#fffdf8;border-radius:2px}
+.score tfoot td{font-weight:700;color:var(--sumi);background:#ebe2d2}
+.score tfoot td.best{color:var(--hi)}
+.wrapx{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.ruler{margin-top:18px;display:grid;gap:10px}
+.ruler div{background:#f7f2e9;border:1px solid var(--kinari2);padding:12px 14px}
+.ruler b{color:var(--hi);margin-right:8px}
+.look{margin-top:14px;font-size:14px;background:#f7f2e9;border:1px solid var(--kinari2);padding:12px 14px}
+.look b{display:block;color:var(--sumi);margin-bottom:4px}
+.look li{margin-left:1.2em}
+details.orig{margin-top:12px;font-size:14px}
+details.orig summary{cursor:pointer;color:#8a6a4a}
+details.orig pre{white-space:pre-wrap;background:#f7f2e9;border:1px solid var(--kinari2);padding:12px 14px;margin-top:8px;font-family:inherit;font-size:13.5px;line-height:1.8}
+.btnrow{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap}
+.btn2{appearance:none;border:1px solid var(--sumi);background:var(--sumi);color:var(--kinari);font:inherit;font-size:13px;letter-spacing:.08em;padding:8px 16px;border-radius:2px;cursor:pointer}
+.btn2.ghost{background:transparent;color:var(--sumi)}
+.btn2.done{background:var(--hi);border-color:var(--hi);color:var(--sumi)}
+</style>
+
+</head>
+<body>
+<section class="hero">
+  <div class="kicker">登録特典 ／ 合言葉「比較」</div>
+  <h1 class="mincho">どのAIに任せるか、<br><em>自分の仕事で</em>決める</h1>
+  <p class="lead">ChatGPT・Claude・Geminiに、まったく同じ指示を出して比べる。動画の3回戦で使った指示文3本と、採点表、負けたAIに足す一言5本をまとめました。</p>
+  <div class="flow mincho"><span><i class="ember"></i>比べ方</span><i class="ln"></i><span><i class="ember"></i>指示文3本</span><i class="ln"></i><span><i class="ember"></i>採点表</span><i class="ln"></i><span><i class="ember"></i>足す一言</span></div>
+</section>
+
+<main>
+  <div class="intro">
+    <p>「どのAIがいちばんいいですか？」とよく聞かれます。答えは、<b>仕事の中身で変わります。</b>文章の仕上げが得意なAIもあれば、数字の整理が得意なAIもあります。分からない所を空けておくAIもあれば、それっぽく埋めてしまうAIもあります。</p>
+    <p>だから、人の評判で選ぶより、<b>自分が毎日いちばん時間を使っている仕事を1つ選んで、3つに同じ指示を出して比べる</b>のがいちばん早いです。新しい仕事をAIに任せる時は、最初の1回だけ3つに出して比べて、いちばん良かったAIをその仕事の担当にする。このページは、そのための道具一式です。</p>
+  </div>
+  <div class="need">
+    <h3>用意するもの</h3>
+    <ul>
+      <li>ChatGPT・Claude・Gemini（無料のままでも比べられます。使っているプランはメモしておく）</li>
+      <li>比べたい仕事を1つ（このページの3本は、インスタ運用でよくある仕事です）</li>
+      <li>自分のお店の情報（[ ] の所に入れます）／振り返りをするならインスタの数字10本分</li>
+      <li>時間：1回戦あたり10分くらい</li>
+    </ul>
+  </div>
+
+  <section class="step">
+    <div class="st-head mincho"><span class="name">比べ方</span><span class="sub">1 ／ 4</span></div>
+    <h2 class="mincho">そろえるのは3つだけ</h2>
+    <p>ここがそろっていないと、AIの差なのか、頼み方の差なのかが分からなくなります。</p>
+    <div class="ruler">
+      <div><b>同じ指示</b>1文字も変えずに、3つに同じ文を貼る。下のコピーボタンを使えば、そろいます。</div>
+      <div><b>新しいチャット</b>前の会話が残っていると、答えが変わります。3つとも新しいチャットを開いてから貼る。</div>
+      <div><b>同じものさし</b>点のつけ方を先に決めておく。下の採点表は「そのまま使えるか・お店らしさ・間違いがないか」の3つ×5点です。</div>
+    </div>
+    <p class="note">AIの答えは、同じ指示でも毎回少しずつ変わります。1回で決めきれない時は、点が近かった2つだけもう1回出してみてください。</p>
+  </section>
+  <section class="step">
+    <div class="st-head mincho"><span class="name">指示文</span><span class="sub">2 ／ 4</span></div>
+    <h2 class="mincho">動画の3回戦で使った指示文3本</h2>
+    <p>動画で使った文を、[ ] の所だけ入れかえれば自分のお店で使える形にしました。コピーして、[ ] を書きかえてから、3つのAIに貼ってください。</p>
+    <p class="get">3本とも、架空の「佐世保の小さな花屋」を入れてChatGPTで1回ずつ動かし、指示どおりの形で返ってくることを確かめています。動画では同じ文をChatGPT・Claude・Geminiの3つに出しています。</p>
+
+    <div class="item"><h3><span class="no">1回戦</span>リールの台本</h3><p class="use">来てほしい人・時期・時間を決めて、30秒の台本を秒ごとの表で出してもらいます。</p>
+    <div class="prompt"><div class="bar">指示文 1回戦<button class="copy" data-t="p1">コピー</button></div><pre id="p1"><mark>[地域]</mark>の<mark>[お店の種類。例：小さなカフェ]</mark>のインスタ。来てほしいのは<mark>[来てほしい人。例：近くで働く30代]</mark>。<mark>[時期。例：12月]</mark>の<mark>[来てほしい時間。例：平日の昼]</mark>に来てもらうための、30秒のリールの台本を作って。最初の3秒で見せるもの、話す言葉、画面の文字、最後の一言を、秒ごとに表で。</pre></div>
+    <div class="look"><b>答えを見る所</b><ul>
+      <li>最初の3秒に「自分のことだ」と思える言葉が入っているか（例：近くで働く人の、平日の昼）</li>
+      <li>30秒の中で、言いたいことが1つにしぼれているか</li>
+      <li>最後の一言で、見た人が何をすればいいか（保存か、来店か）分かるか</li>
+      <li>メニューの値段など、伝えていないことを勝手に書いていないか</li>
+      <li>頼んだとおり秒ごとの表になっていて、30秒まであるか</li>
+    </ul></div>
+    <details class="orig"><summary>動画で使った文（記入例）を見る</summary><pre>長崎の小さなカフェのインスタ。来てほしいのは近くで働く30代。12月の平日の昼に来てもらうための、30秒のリールの台本を作って。最初の3秒で見せるもの、話す言葉、画面の文字、最後の一言を、秒ごとに表で。</pre></details></div>
+
+    <div class="item"><h3><span class="no">2回戦</span>投稿の振り返り</h3><p class="use">直近10本の数字を貼って、よかった投稿の共通点と、来月の投稿の曜日・時間を出してもらいます。</p>
+    <div class="prompt"><div class="bar">指示文 2回戦<button class="copy" data-t="p2">コピー</button></div><pre id="p2"><mark>[お店]</mark>のインスタの、直近10本の数字です。
+よかった投稿の共通点を3つ、来月やめたほうがいいことを1つ、来月の投稿の曜日と時間のおすすめを、理由つきで。数字から言えないことは、言えないと書いて。
+
+<mark>[ここに10本分の表を貼る：投稿日・曜日・時間・内容・見られた数・保存・いいね]</mark></pre></div>
+    <div class="look"><b>答えを見る所</b><ul>
+      <li>貼った表の数字を、ちゃんと読んでいるか（数字の写し間違い・計算のずれがないか）</li>
+      <li>保存がいちばん多い投稿に気づいているか</li>
+      <li>10本しかないのに、言い切りすぎていないか（「この時間が正解」と決めつけていないか）</li>
+    </ul></div>
+    <p class="note">最後の「数字から言えないことは、言えないと書いて」がこの指示文のいちばん大事な所です。AIは、少ないデータでも自信ありげに言い切ってしまうことがあります。</p>
+    <details class="orig"><summary>動画で使った文（記入例）を見る</summary><pre>長崎の小さなカフェのインスタの、直近10本の数字です（撮影用の架空の数字）。
+よかった投稿の共通点を3つ、来月やめたほうがいいことを1つ、来月の投稿の曜日と時間のおすすめを、理由つきで。数字から言えないことは、言えないと書いて。
+
+| No | 投稿日 | 曜日 | 時間 | 内容 | 見られた数 | 保存 | いいね |
+| 1 | 11/2 | 日 | 19:00 | 新メニュー：りんごのタルト | 1,240 | 18 | 62 |
+| 2 | 11/5 | 水 | 12:00 | 平日ランチのプレート | 1,860 | 41 | 88 |
+| 3 | 11/8 | 土 | 10:00 | 店内の窓ぎわの席 | 980 | 12 | 54 |
+| 4 | 11/11 | 火 | 12:10 | ランチ前の仕込み（リール） | 2,310 | 35 | 97 |
+| 5 | 11/13 | 木 | 20:00 | スタッフ紹介 | 720 | 5 | 49 |
+| 6 | 11/16 | 日 | 15:00 | 季節のラテアート | 1,520 | 22 | 81 |
+| 7 | 11/19 | 水 | 12:00 | 30分で食べられるランチ3選（カルーセル） | 3,480 | 186 | 132 |
+| 8 | 11/21 | 金 | 18:30 | クリスマスケーキ予約の案内 | 1,150 | 9 | 40 |
+| 9 | 11/24 | 月 | 7:30 | 朝のコーヒーとお店の外観 | 890 | 11 | 45 |
+| 10 | 11/26 | 水 | 12:00 | 雨の日だけのスープ | 1,670 | 38 | 76 |</pre></details></div>
+
+    <div class="item"><h3><span class="no">3回戦</span>コメントの返信</h3><p class="use">届いたコメントを貼って、返信の下書きを作ってもらいます。送るのは自分です。</p>
+    <div class="prompt"><div class="bar">指示文 3回戦<button class="copy" data-t="p3">コピー</button></div><pre id="p3"><mark>[お店]</mark>のインスタに来たコメントです。
+このお店の担当者として、それぞれのコメントに返信の下書きを。やさしい言葉で、1つ60文字以内。お店の情報でわからないことは書かずに「確認してお返事します」にして。
+
+<mark>[ここにコメントを番号つきで貼る]</mark></pre></div>
+    <div class="look"><b>答えを見る所</b><ul>
+      <li>伝えていないこと（駐車場があるか、など）を「あります」と書いていないか。お店の情報を渡していないので、分かるはずがありません</li>
+      <li>きつめのコメントに、言い訳せずにまず謝って、次に来てもらえる一言があるか（返信は、書いた人以外のお客さんも見ています）</li>
+      <li>60文字以内を守れているか（長い返信は読まれません）</li>
+    </ul></div>
+    <details class="orig"><summary>動画で使った文（記入例）を見る</summary><pre>長崎の小さなカフェのインスタに来たコメント5つです（撮影用の架空のコメント）。
+このカフェの担当者として、5つのコメントに返信の下書きを。やさしい言葉で、1つ60文字以内。お店の情報でわからないことは書かずに「確認してお返事します」にして。
+
+1. 行ってみたいです！
+2. 駐車場ありますか？
+3. 子ども連れでも大丈夫ですか？
+4. 前に行きました、また行きます
+5. 前に行ったら待たされました</pre></details></div>
+  </section>
+  <section class="step">
+    <div class="st-head mincho"><span class="name">採点表</span><span class="sub">3 ／ 4</span></div>
+    <h2 class="mincho">ものさし3つ × 5点で、仕事ごとに担当を決める</h2>
+    <div class="ruler">
+      <div><b>A</b>そのまま使えるか（頼んだ形で出てきたか。手直しが少ないか）</div>
+      <div><b>B</b>お店らしさ（どこのお店でも言えることになっていないか）</div>
+      <div><b>C</b>間違いがないか（伝えていないことを書いていないか。数字は合っているか）</div>
+    </div>
+    <p>答えを並べて読みながら、1〜5で点を入れてください。合計は自動で出ます。点を入れたら「表をコピー」で、スプレッドシートやExcelにそのまま貼れます。</p>
+    <div class="wrapx"><table class="score" id="sc">
+      <thead><tr><th>回戦</th><th>ものさし</th><th>ChatGPT</th><th>Claude</th><th>Gemini</th></tr></thead>
+      <tbody></tbody>
+      <tfoot><tr><td colspan="2">合計</td><td id="t0">0</td><td id="t1">0</td><td id="t2">0</td></tr></tfoot>
+    </table></div>
+    <div class="btnrow"><button class="btn2" id="cpTable">表をコピー（スプレッドシート用）</button><button class="btn2 ghost" id="clr">点を消す</button></div>
+    <p class="note">いちばん大事なのは合計より<b>回戦ごとの点</b>です。リール台本はこのAI、振り返りはこのAI、のように、仕事ごとに担当を決めてください。それが、その仕事の「担当のAI社員」です。</p>
+  </section>
+
+  <section class="step">
+    <div class="st-head mincho"><span class="name">足す一言</span><span class="sub">4 ／ 4</span></div>
+    <h2 class="mincho">点が低かったAIは、指示に一言足してやり直す</h2>
+    <p>点が低かったからAIがダメ、ではありません。指示の出し方で、答えはかなり変わります。いちばん点が低かった所に、次の一言を<b>指示の最後に足して</b>、新しいチャットでやり直してみてください。</p>
+    <div class="item"><h3><span class="no">一言 1</span>先に考えさせてから、作らせる</h3><p class="use">動画の再挑戦で足した一言です。お店らしさ（B）が低い時に。</p>
+    <div class="prompt"><div class="bar">足す一言 1<button class="copy" data-t="h1">コピー</button></div><pre id="h1">書く前に、このお店に来てほしい人と、その人が困っていることを3行で書き出してから作って。</pre></div></div>
+    <div class="item"><h3><span class="no">一言 2</span>分からないことは、分からないと書いて</h3><p class="use">知らないことを勝手に埋める（作り話をする）のを防ぎます。間違い（C）が低い時に。</p>
+    <div class="prompt"><div class="bar">足す一言 2<button class="copy" data-t="h2">コピー</button></div><pre id="h2">分からないことや確かめられないことは、想像で埋めずに「分からない」と書いて。</pre></div></div>
+    <div class="item"><h3><span class="no">一言 3</span>作る前に、質問があれば先に聞いて</h3><p class="use">足りない情報を、AIの方から聞いてくれるようになります。</p>
+    <div class="prompt"><div class="bar">足す一言 3<button class="copy" data-t="h3">コピー</button></div><pre id="h3">作り始める前に、足りない情報や確かめたいことがあれば、先に質問して。答えてから作って。</pre></div></div>
+    <div class="item"><h3><span class="no">一言 4</span>出す前に、3つの点でチェックして直して</h3><p class="use">細かいミスが減ります。そのまま使えるか（A）が低い時に。</p>
+    <div class="prompt"><div class="bar">足す一言 4<button class="copy" data-t="h4">コピー</button></div><pre id="h4">出す前に、自分で次の3つの点でチェックして、直してから出して。
+1. 頼んだ形（表・文字数・秒数）になっているか
+2. このお店らしい言葉になっているか
+3. 伝えていないことを書いていないか</pre></div></div>
+    <div class="item"><h3><span class="no">一言 5</span>送らないで、下書きだけ</h3><p class="use">返信や投稿を、AIが勝手に外へ出すのを防ぎます。送るのは自分。</p>
+    <div class="prompt"><div class="bar">足す一言 5<button class="copy" data-t="h5">コピー</button></div><pre id="h5">送ったり公開したりしないで、下書きだけ作って。</pre></div></div>
+    <p class="note">一言足しても点があまり変わらない仕事もあります。それは「その仕事は、もともと得意なAIに任せた方が早い」というサインです。</p>
+  </section>
+
+  <section class="trouble">
+    <h2 class="mincho">つまずいたとき</h2>
+    <dl>
+      <dt>3つの答えがバラバラで比べにくい</dt><dd>指示文の形（表で、60文字以内で）を1文字も変えずに貼れているか確かめてください。形が決まっていると、並べて読みやすくなります。</dd>
+      <dt>「最後の一言」が表に入っていない</dt><dd>表の外に別に書いてくるAIもあります。表に入れてほしい時は「最後の一言も表の列に入れて」と続けて送る。</dd>
+      <dt>1本だけの結果で、曜日や時間を決めてきた</dt><dd>10本だと、たまたまの結果もあります。「同じ時間の投稿が1本しかない物は、おすすめにしないで」と続けて送る。</dd>
+      <dt>きつめのコメントへの返信が、謝るだけで終わっている</dt><dd>「謝ったあとに、また来てもらえる一言を足して」と続けて送る。</dd>
+      <dt>知らない値段や、ない設備が書いてある</dt><dd>消して、足す一言2（分からないことは分からないと書いて）を足してやり直す。</dd>
+      <dt>前と同じ指示なのに答えが違う</dt><dd>AIの答えは毎回少しずつ変わります。新しいチャットで、もう1回出してみてください。</dd>
+    </dl>
+  </section>
+</main>
+
+<section class="end">
+  <div class="big mincho">AIを選ぶんじゃなく、<br>仕事ごとに担当を決める。</div>
+  <p>比べて決めた担当のAIに、毎朝の段取りまで任せる指示文は、公式LINEで「AI社員」と送ると届きます。</p>
+  <p>自分のお店の仕事だとどう比べればいいか分からない時は、公式LINEで「相談」と送ってください。</p>
+  <a class="line-btn" href="https://lin.ee/Qn23d5G">LINEで相談する</a>
+  <div class="sign mincho">かなた</div>
+</section>
+<script>
+function fallback(t){var a=document.createElement('textarea');a.value=t;a.style.position='fixed';a.style.opacity='0';document.body.appendChild(a);a.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(a)}
+function copyText(t,b,label){var ok=function(){b.textContent='コピーしました';b.classList.add('done');setTimeout(function(){b.textContent=label;b.classList.remove('done')},1800)};
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(ok,function(){fallback(t);ok()})}else{fallback(t);ok()}}
+document.querySelectorAll('.copy').forEach(function(b){b.addEventListener('click',function(){copyText(document.getElementById(b.dataset.t).innerText,b,'コピー')})});
+var R=['1回戦 リール台本','2回戦 振り返り','3回戦 コメント返信'],M=['A そのまま使えるか','B お店らしさ','C 間違いがないか'],AI=['ChatGPT','Claude','Gemini'];
+var tb=document.querySelector('#sc tbody'),KEY='hikaku-score-v1',saved={};
+try{saved=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){saved={}}
+R.forEach(function(r,i){M.forEach(function(m,j){var tr=document.createElement('tr');
+  if(j===0){var td=document.createElement('td');td.className='r';td.rowSpan=3;td.textContent=r;tr.appendChild(td)}
+  var tm=document.createElement('td');tm.textContent=m;tm.style.textAlign='left';tr.appendChild(tm);
+  AI.forEach(function(a,k){var td=document.createElement('td'),s=document.createElement('select');s.id='s'+i+j+k;
+    ['-','1','2','3','4','5'].forEach(function(v){var o=document.createElement('option');o.value=v==='-'?'':v;o.textContent=v;s.appendChild(o)});
+    if(saved[s.id])s.value=saved[s.id];s.addEventListener('change',calc);td.appendChild(s);tr.appendChild(td)});
+  tb.appendChild(tr)})});
+function calc(){var tot=[0,0,0],st={};document.querySelectorAll('#sc select').forEach(function(s){var k=+s.id.charAt(3);if(s.value){tot[k]+=+s.value;st[s.id]=s.value}});
+  var mx=Math.max.apply(null,tot);tot.forEach(function(v,k){var c=document.getElementById('t'+k);c.textContent=v;c.className=(v>0&&v===mx)?'best':''});
+  try{localStorage.setItem(KEY,JSON.stringify(st))}catch(e){}}
+calc();
+document.getElementById('cpTable').addEventListener('click',function(){var lines=['回戦\tものさし\tChatGPT\tClaude\tGemini'];
+  R.forEach(function(r,i){M.forEach(function(m,j){var row=[r,m];AI.forEach(function(a,k){row.push(document.getElementById('s'+i+j+k).value)});lines.push(row.join('\t'))})});
+  lines.push(['合計','',document.getElementById('t0').textContent,document.getElementById('t1').textContent,document.getElementById('t2').textContent].join('\t'));
+  copyText(lines.join('\n'),this,'表をコピー（スプレッドシート用）')});
+document.getElementById('clr').addEventListener('click',function(){document.querySelectorAll('#sc select').forEach(function(s){s.value=''});calc()});
+</script>
+</body>
+</html>
